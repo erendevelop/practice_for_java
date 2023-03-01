@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainPinFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/pin"
+            android:text="@string/pin"/>
+        <!--Buton satırlarının bulunduğu LinearLayout-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <!--İlk LinearLayout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+                <!--İlk buton-->
+                <Button
+                    android:text="1"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--Butonları uzaklaştırmak için elemansız View-->
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+
+                <Button
+                    android:text="2"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+                <Button
+                    android:text="3"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <!--İkinci LinearLayout-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+                <Button
+                    android:text="4"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+                <Button
+                    android:text="5"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+                <Button
+                    android:text="6"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <!--Üçüncü LinearLayout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:text="7"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+                <Button
+                    android:text="8"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="10dp"/>
+                <Button
+                    android:text="9"
+                    android:background="@color/transparent"
+                    android:id="@+id/btn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <Button
+                    android:id="@+id/deletebtn"
+                    android:background="@color/transparent"
+                    android:text="Sil"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_height="1dp" android:layout_width="10dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn0"
+                    android:background="@color/transparent"
+                    android:text="0"
+                    />
+                <View
+                    android:layout_height="1dp" android:layout_width="10dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enterbtn"
+                    android:background="@color/transparent"
+                    android:text="Giriş"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
